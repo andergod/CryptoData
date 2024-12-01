@@ -5,17 +5,18 @@ from alpaca.trading.requests import GetAssetsRequest
 
 def main():
 
-    trading_client = TradingClient('api-key', 'secret-key')
+    trading_client = TradingClient(api_key.key, api_key.secret)
 
     # Get our account information.
     account = trading_client.get_account()
 
     # Check if our account is restricted from trading.
     if account.trading_blocked:
-        print('Account is currently restricted from trading.')
+        print("Account is currently restricted from trading.")
 
     # Check how much money we can use to open new positions.
-    print('${} is available as buying power.'.format(account.buying_power))
-    
-if __name__ == '__main__':
+    print("${} is available as buying power.".format(account.buying_power))
+
+
+if __name__ == "__main__":
     main()
