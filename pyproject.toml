@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "CryptoData"
+version = "0.1.0"
+description = "Get L2 Crypto Data using Alapca API"
+authors = ["Jesus T"]
+license = "MIT"
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = "3.11.10"
+dateparser = "^1.2.0"
+python-dateutil = "^2.9.0.post0"
+urllib3 = "^2.2.3"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+numpy = "2.0.2"
+asyncio = "^3.4.3"
+black = "^24.10.0"
+pylint = "^3.3.1"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
